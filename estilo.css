@@ -1,0 +1,294 @@
+:root{
+    --cor-primaria:#ffffff;
+    --cor-secundaria:#d4d4d4;
+    --cor-terciaria:#5e99f3;
+    --cor-de-fundo-sessao:#DDDA;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    background-color: var(--cor-primaria);
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    overflow-x:hidden;
+}
+nav{
+    width:100%;
+    background:linear-gradient(to top,var(--cor-primaria),#292973);
+    display: flex;
+    justify-content: center;
+    gap:50%;
+}
+
+nav .titulo{
+    overflow:visible;
+}
+nav .titulo h1{
+    font-family: Chusten Bullgis;
+    font-size:50px;
+    color:var(--cor-secundaria);
+    overflow: visible;
+    font-weight: 500;
+    text-shadow: #000 -1px 1px 10px;
+    cursor: pointer;
+    padding:15px 0px;
+}
+
+nav .menu{
+    display: flex;
+    align-items: center;
+}
+nav .menu ul{
+    display: flex;
+    gap:15px;
+    overflow: visible;
+}
+
+nav .menu ul li{
+    list-style: none;
+    overflow: visible;
+}
+
+nav .menu ul li a{
+    font-size: large;
+    overflow: visible;
+    text-decoration: none;
+    color:var(--cor-secundaria);
+    text-shadow: #000 1px 1px 10px;
+    transition: color 0.3s;
+}
+nav .menu ul li a:hover{
+    transition: color 0.3s;
+    color:#030509;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: Chusten Bullgis;
+    src: url(fontes/ChustenBullgis.ttf);
+}
+
+section{
+    height:350px;
+    width: 100%;
+    padding:10px;
+    background-color: var(--cor-secundaria);
+    overflow-y:hidden;
+}
+
+#landing{
+    background-color: var(--cor-de-fundo-sessao);
+    display: flex;
+    gap:35px;
+}
+
+#landing .texto{
+    padding:5px;
+    width:60%;
+    height:100%;
+    display: flex;
+    gap:15px;
+    flex-direction: column;
+}
+#landing .texto p{
+    font-size: x-large;
+}
+
+#landing .imagem{
+    outline:1px solid #000;
+    width:40%;
+    height:100%;
+    background-image: url("imagens/primeira.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Sobrenos */
+
+#sobrenos{
+    background-color: var(--cor-de-fundo-sessao);
+    display: flex;
+}
+
+#sobrenos .texto{
+    padding:5px;
+    width:60%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+#sobrenos .texto p{
+    font-size: x-large;
+}
+
+#sobrenos .imagem{
+    margin-right:25px;
+    margin-left:auto;
+    width:30%;
+    height:100%;
+    background-image: url("imagens/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Servços */
+#servicos{
+    background-color: var(--cor-de-fundo-sessao);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    overflow: visible;
+    height:fit-content;
+}
+#servicos ul{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    overflow: visible;
+}
+
+#servicos ul li{
+    overflow: visible;
+    background-color: transparent;
+}
+
+#servicos .card{
+    height:243px;
+    width:250px;
+    outline: #000 1px solid;
+    border-radius: 5%;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-wrap: wrap;
+}
+
+#servicos .ortese{
+    background-position: top;
+    background-image:url('imagens/ortese.jpg');
+}
+#servicos .protese{
+    background-position: center;
+    background-image:url('imagens/protese.jpg');
+}
+#servicos .adaptacoes{
+    background-size: 320px;
+    background-position: left;
+    background-image:url('imagens/adaptacoes.jpg');
+}
+
+#servicos h3{
+    background-color: #5e99f3BB;
+    padding:3px 8px;
+    border-radius:15px;
+}
+
+#servicos .card p{
+    outline:1px solid #000A;
+    padding:8px;
+    text-align: center;
+    border-radius:25px;
+    background-color: #bfbfbf90;
+    font-size:14px;
+}
+#servicos .card:hover{
+    transition:all 0.4s;
+    transform: scale(110%);
+}
+
+/* Casos */
+
+#casos{
+    background-color: var(--cor-de-fundo-sessao);
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    height:fit-content;  
+    overflow: visible; 
+}
+#casos div{
+    overflow: visible;
+}
+
+#casos ul{
+    display: flex;
+    list-style: none;
+    gap:25px;
+    overflow:visible ;
+}
+
+#casos ul li{
+    overflow: visible;
+    background-color: transparent;
+}
+
+#casos .card{
+    box-shadow: 5px 5px 5px #0004;
+    width:250px;
+    border-radius: 5%;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s;
+    background-image:url('imagens/placeholder.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-wrap: wrap;
+    height:170px;
+}
+
+#casos .card h3,#casos .card h4{
+    margin:10px;
+}
+
+#casos .card p{
+    overflow:visible;
+    font-size:14px;
+}
+#casos .card:hover{
+    overflow: visible;
+    transition:all 0.4s;
+    transform: scale(110%);
+}
+
+/* Rodapé */
+
+footer{
+    width:100%;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    padding:15px 0px;
+    background-color: #292973;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin-left:75px;
+}
+
+footer div a{
+    color:#fff;
+    text-decoration: none;
+}
+footer div a:hover{
+    color:#bfbfbf;
+    text-decoration: underline;
+}
